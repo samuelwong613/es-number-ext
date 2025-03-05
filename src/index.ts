@@ -1,1 +1,2 @@
-console.log('es-number-ext');
+import './random';
+import './randomND';
