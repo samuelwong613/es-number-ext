@@ -28,8 +28,7 @@ import extendProperty from './_helper';
 
 declare global {
   interface NumberConstructor {
-      random(size: number): number;
-      random(min: number, max: number): number;
+    randomND(mean: number, sd: number): number;
   }
 }
 
