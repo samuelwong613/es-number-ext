@@ -45,8 +45,8 @@ function random(minOrSize: number, max?: number) {
 
 declare global {
   interface NumberConstructor {
-      random(size: number): number;
-      random(min: number, max: number): number;
+    random(size: number): number;
+    random(min: number, max: number): number;
   }
 }
 
