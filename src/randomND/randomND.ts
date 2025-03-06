@@ -6,9 +6,9 @@
  * @return {number} 				- a random number base on normal distribution
  * 
  * @example	
- * Number.randomND(3, 1)  // might return 3.5
+ * randomND(3, 1)  // might return 3.5
  * @example	
- * Number.randomND(3.2, 0)  // might return 3.2
+ * randomND(3.2, 0)  // might return 3.2
  */
 export default function randomND(mean: number, sd: number): number;
 

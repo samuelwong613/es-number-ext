@@ -6,8 +6,8 @@
   "exports": {
     ".": "./dist/index",
     "./clean": "./dist/clean",
-    "./random": "./dist/random/index",
-    "./randomND": "./dist/randomND/index"
+    "./random": "./dist/random",
+    "./randomND": "./dist/randomND"
   },
   "scripts": {
     "start": "node .",

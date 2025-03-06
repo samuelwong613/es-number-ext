@@ -5,9 +5,9 @@
  * @return {number} A random integer in the range from 0 to size - 1.
  * 
  * @example
- * Number.random(3)  // might return 2 (0 ~ 2)
+ * random(3)  // might return 2 (0 ~ 2)
  * @example
- * Number.random(-3)  // might return -2 (-3 ~ -1)
+ * random(-3)  // might return -2 (-3 ~ -1)
  */
 export default function random(size: number): number;
 
