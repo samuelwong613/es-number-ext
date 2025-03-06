@@ -1,20 +1,5 @@
-import extendProperty from './_helper';
-
-function random(minOrSize: number, max?: number) {
-  if (max === undefined && Number.isInteger(minOrSize) && minOrSize > 0)
-    [minOrSize, max] = [0, minOrSize];
-  else if (max === undefined && Number.isInteger(minOrSize) && minOrSize < 0)
-    [minOrSize, max] = [minOrSize, 0];
-    
-  if (typeof minOrSize !== 'number' || !Number.isInteger(minOrSize))
-    throw new TypeError('Number.random parameter 1 must be an integer');
-  if (typeof max !== 'number' || !Number.isInteger(max))
-    throw new TypeError('Number.random parameter 2 must be an integer');
-  if (max < minOrSize)
-    throw new TypeError('Number.random parameter 1 must be smaller than parameter 2');
-
-  return Math.floor(Math.random() * (max-minOrSize)) + minOrSize;
-}
+import extendProperty from '../_helper';
+import random from './random';
 
 declare global {
   interface NumberConstructor {

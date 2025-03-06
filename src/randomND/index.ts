@@ -1,18 +1,5 @@
-import extendProperty from './_helper';
-
-function randomND(mean: number, sd: number): number {
-  if (typeof mean !== 'number')
-    throw new TypeError('Number.randomND parameter 1 must be a number');
-  
-  if (typeof sd !== 'number' || sd < 0)
-		throw new TypeError('Number.randomND parameter 2 must be a positive number');
-
-  return ((
-    Math.floor(Math.random()*1000)+
-    Math.floor(Math.random()*1000)+
-    Math.floor(Math.random()*1000)
-  ) / 500 - 3) * sd + mean;
-}
+import extendProperty from '../_helper';
+import randomND from './randomND';
 
 declare global {
   interface NumberConstructor {
