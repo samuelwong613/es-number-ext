@@ -4,10 +4,10 @@
   "description": "Native number extensions for javascript and typescript.",
   "main": "dist/index.js",
   "exports": {
-    ".": "./dist/index",
-    "./clean": "./dist/clean",
-    "./random": "./dist/random",
-    "./randomND": "./dist/randomND"
+    ".": "./dist/index.js",
+    "./clean": "./dist/clean.js",
+    "./random": "./dist/random/index.js",
+    "./randomND": "./dist/randomND/index.js"
   },
   "scripts": {
     "start": "node .",
