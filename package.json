@@ -3,6 +3,12 @@
   "version": "0.0.5",
   "description": "Native number extensions for javascript and typescript.",
   "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./clean": "./dist/clean.js",
+    "./random": "./dist/random/index.js",
+    "./randomND": "./dist/random/index.js"
+  },
   "scripts": {
     "start": "node .",
     "build": "tsc",
