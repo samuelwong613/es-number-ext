@@ -1,13 +1,17 @@
 /**  
  * Generates a random number based on mean and sd (normal distribution)
  *
- * @param {number} mean 		- mean for normal distribution
- * @param {number} sd 	    - standard deviation for normal distribution
- * @return {number} 				- a random number base on normal distribution
+ * @param {number} mean 		
+ * - Mean for normal distribution
+ * 
+ * @param {number} sd 	    
+ * - Standard deviation for normal distribution
+ * 
+ * @return {number} 				
+ * A random number base on normal distribution
  * 
  * @example	
  * randomND(3, 1)  // might return 3.5
- * @example	
  * randomND(3.2, 0)  // might return 3.2
  */
 export default function randomND(mean: number, sd: number): number;

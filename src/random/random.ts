@@ -1,12 +1,14 @@
 /**
  * Generates a random integer within a specified range.
  * 
- * @param {number} size - The size of the range (0 to size-1).
- * @return {number} A random integer in the range from 0 to size - 1.
+ * @param {number} size
+ * - The size of the range (0 to size-1).
+ * 
+ * @return {number}
+ * A random integer in the range from 0 to size - 1.
  * 
  * @example
  * random(3)  // might return 2 (0 ~ 2)
- * @example
  * random(-3)  // might return -2 (-3 ~ -1)
  */
 export default function random(size: number): number;
@@ -14,14 +16,18 @@ export default function random(size: number): number;
  /**
   * Generates a random integer within a specified range.
   * 
-  * @param {number} min - The lower bound of the range.
-  * @param {number} max - The upper bound of the range.
-  * @return {number} A random integer in the range from min to max - 1.
+  * @param {number} min
+  * - The lower bound of the range.
+  * 
+  * @param {number} max
+  * - The upper bound of the range.
+  * 
+  * @return {number}
+  * A random integer in the range from min to max - 1.
   * 
   * @example
-  * Number.random(1, 5)  // might return 4 (1 ~ 4)
-  * @example
-  * Number.random(-5, -1)  // might return -2 (-5 ~ -2)
+  * random(1, 5)  // might return 4 (1 ~ 4)
+  * random(-5, -1)  // might return -2 (-5 ~ -2)
   */
 export default function random(min: number, max: number): number;
 
