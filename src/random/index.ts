@@ -8,10 +8,10 @@ declare global {
      * Generates a random integer within a specified range.
      * 
      * @param {number} size
-     * - The size of the range (0 to size-1).
+     * - The size of the range.
      * 
      * @return {number} 
-     * A random integer in the range from 0 to size - 1.
+     * A random integer in the range from 0.
      * 
      * @example
      * Number.random(3)  // might return 2 (0 ~ 2)
