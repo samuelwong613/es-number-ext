@@ -3,8 +3,16 @@ Native number extensions for `javascript` and `typescript`.
 <br/>
 <br/>
 
+# Table of Contents
+1. [Installation](#Installation)
+2. [Usage](#Usage)
+3. [Functions](#Functions)
+4. [Test](#Test)
+5. [License](#License)
+<br/>
+
 # Installation
-Under your `js` or `ts` project, run the follow command in the terminal.
+Under your project folder, run the follow command in the terminal.
 ```
 npm i --save es-number-ext
 ```
@@ -31,21 +39,22 @@ const number = random(5,10);
 # Functions
 
 <details>
-<summary> <code style="color : skyblue"> Number.random() </code></summary>
+<summary> Number.random() </summary>
+<br/>
 
-- <code style="color : skyblue">Generates a random integer within a specified range.</code>
+> Generates a random integer within a specified range.
 
-### <code style="color : gray"> Parameters </code>
+##### $${\color{gray}Parameters}$$
 | Param  | Type | Desc|
 | - | - | - |
 | size  | number  | The size of the range. |
 
-### <code style="color : gray"> Return </code>
+##### $${\color{gray}Return}$$
 | Type | Desc|
 | - | - |
 | number  | A random integer in the range from 0. |
 
-### <code style="color : gray"> Example </code>
+#### $${\color{gray}Example}$$
 ```ts
 Number.random(3)   // might return 2 (0 ~ 2)
 Number.random(-3)  // might return -2 (-3 ~ -1)
@@ -53,46 +62,56 @@ Number.random(-3)  // might return -2 (-3 ~ -1)
 
 -----
 
-### <code style="color : gray"> Parameters </code>
+##### ${\color{gray}Parameters}$
 | Param  | Type | Desc|
 | - | - | - |
 | min  | number  | The lower bound of the range. |
 | max  | number  | The upper bound of the range. |
 
-### <code style="color : gray"> Return </code>
+##### ${\color{gray}Return}$
 | Type | Desc|
 | - | - |
 | number  | A random integer in the range from min to max - 1. |
 
-### <code style="color : gray"> Example </code>
+#### ${\color{gray}Example}$
 ```ts
 Number.random(1, 5)    // might return 4 (1 ~ 4) 
 Number.random(-5, -1)  // might return -2 (-5 ~ -2)
 ```
-</details>
 
 -----
+</details>
 
 <details>
-<summary> <code style="color : skyblue"> Number.randomND() </code></summary>
+<summary> Number.randomND()</summary>  
+<br/>
 
-- <code style="color : skyblue">Generates a random number based on mean and sd (normal distribution).</code>
+> Generates a random number based on mean and sd (normal distribution).
 
-### <code style="color : gray"> Parameters </code>
+##### ${\color{gray}Parameters}$
 | Param  | Type | Desc|
 | - | - | - |
 | mean  | number  | Mean for normal distribution. |
 | sd  | number  | Standard deviation for normal distribution. |
 
-### <code style="color : gray"> Return </code>
+##### ${\color{gray}Return}$
 | Type | Desc|
 | - | - |
 | number  | A random number base on normal distribution |
 
-### <code style="color : gray"> Example </code>
+#### ${\color{gray}Example}$
 ```ts
 Number.randomND(3, 1)     // might return 3.5 
 Number.randomND(3.2, 0)   // might return 3.2
 ```
-
+-----
 </details>
+<br/>
+
+# Test
+> Pending
+<br/>
+
+# License
+- MIT License
+<br/>
