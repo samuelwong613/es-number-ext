@@ -1,5 +1,7 @@
 # es-number-ext
-Native number extensions for `javascript` and `typescript`.
+Native number extensions for `javascript` and `typescript`.<br/>
+> [!CAUTION]
+> This library extend the native objects `Number.prototype`.  This may lead to collision with other libraries or the latest version of ECMSscript.
 <br/>
 <br/>
 
@@ -7,8 +9,9 @@ Native number extensions for `javascript` and `typescript`.
 1. [Installation](#Installation)
 2. [Usage](#Usage)
 3. [Functions](#Functions)
-4. [Test](#Test)
-5. [License](#License)
+4. [Advanced Usage](#Advanced-Usage)
+5. [Test](#Test)
+6. [License](#License)
 <br/>
 
 # Installation
@@ -106,6 +109,27 @@ Number.randomND(3.2, 0)   // might return 3.2
 ```
 -----
 </details>
+<br/>
+
+# Advanced Usage
+
+### Clean Import - (*Non prototype pollution*) 
+```ts
+// For non-pollution
+import { random, ... } from "es-number-ext/clean"
+
+const number = random(5,10);
+```
+
+### Specifc Function - (*To avoid collision with other libraries*)
+```ts
+import "es-number-ext/random"
+import "es-number-ext/randomND"
+
+const number = Number.random(5,10);
+const numberND = Number.randomND(3,2);
+```
+
 <br/>
 
 # Test
