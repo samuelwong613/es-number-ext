@@ -1,7 +1,7 @@
 # es-number-ext
 Native number extensions for `javascript` and `typescript`.<br/>
-> [!CAUTION]
-> This library extend the native objects `Number.prototype`.  This may lead to collision with other libraries or the latest version of ECMSscript.
+> [!IMPORTANT]
+> This library extend the native objects `Number.prototype`.  This may lead to collision with other libraries or the latest version of ECMAScript.
 <br/>
 <br/>
 
