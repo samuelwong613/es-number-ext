@@ -1,6 +1,6 @@
 {
   "name": "es-number-ext",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Native number extensions for javascript and typescript.",
   "main": "dist/index.js",
   "exports": {
