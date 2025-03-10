@@ -25,6 +25,7 @@ npm i --save es-number-ext
 ### Prototype Version
 ```ts
 // For Number prototype
+// Import at the entry point of the project, such as index.ts
 import from "es-number-ext"
 
 const number = Number.random(5,10);
@@ -33,6 +34,7 @@ const number = Number.random(5,10);
 ### Clean Version - (*Non prototype pollution*) 
 ```ts
 // For non-pollution
+// Import at the .ts file where you are going to use
 import { random, ... } from "es-number-ext/clean"
 
 const number = random(5,10);
@@ -133,7 +135,9 @@ const numberND = Number.randomND(3,2);
 <br/>
 
 # Test
-> Pending
+```ts
+npm run test
+```
 <br/>
 
 # License

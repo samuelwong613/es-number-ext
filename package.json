@@ -12,7 +12,7 @@
   "scripts": {
     "start": "node .",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "number",
@@ -32,8 +32,9 @@
     "url": "https://github.com/samuelwong613/es-number-ext.git"
   },
   "author": "samuelwong <samuelwong613@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "jest": "^29.7.0",
     "typescript": "^5.8.2"
   }
 }
